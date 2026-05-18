@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Dhruv Solanki — portfolio website, engineering research, and digital experiments.">
+    <meta name="keywords" content="Dhruv Solanki, projects, portfolio website, engineering research, construction, web development">
+    <meta name="author" content="Dhruv Solanki">
+    <meta property="og:title" content="Dhruv Solanki | Projects">
+    <meta property="og:description" content="Digital experiments, engineering research, and practical builds.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image/profile.jpg">
+    <meta name="theme-color" content="#334D42">
+
+    <title>Dhruv Solanki | Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo-area">
+            <a class="logo" href="index.html?home=1" aria-label="Go to home">DS</a>
+            <div id="clock">00:00:00</div>
+        </div>
+
+        <ul>
+            <li><a href="index.html?home=1">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a class="active" href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects-page system-page">
+            <div class="system-hero projects-system-hero">
+                <p class="system-label" data-aos="fade-up">Builds • Research • Digital Experiments</p>
+
+                <div class="system-hero-grid">
+                    <h1 data-aos="fade-up">
+                        Projects
+                    </h1>
+
+                    <p data-aos="fade-up" data-aos-delay="120">
+                        A small archive of things I have built, studied, or shaped:
+                        practical tools, engineering ideas, and experiments in digital identity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-controls" data-aos="fade-up">
+                <button class="project-filter active" type="button" data-project-filter="all">All</button>
+                <button class="project-filter" type="button" data-project-filter="web">Web</button>
+                <button class="project-filter" type="button" data-project-filter="engineering">Engineering</button>
+                <button class="project-filter" type="button" data-project-filter="research">Research</button>
+            </div>
+
+            <div class="projects-container project-lab">
+                <article class="project-card" data-aos="zoom-in" data-project-category="web" data-project="portfolio">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Portfolio Website">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>Web</span>
+                            <span>HTML • CSS • JS</span>
+                        </div>
+
+                        <h2>Portfolio Website</h2>
+
+                        <p>
+                            A modern identity-focused portfolio with responsive design,
+                            motion, dark mode, and interactive personal sections.
+                        </p>
+
+                        <button class="project-open" type="button">
+                            Open case note
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="zoom-in" data-project-category="engineering research" data-project="research">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Engineering Research Projects">
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>Research</span>
+                            <span>Engineering</span>
+                        </div>
+
+                        <h2>Engineering Research Projects</h2>
+
+                        <p>
+                            Academic research involving water filtration using AFM and
+                            concrete performance evaluation with recycled plastic materials.
+                        </p>
+
+                        <button class="project-open" type="button">
+                            Open case note
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="zoom-in" data-project-category="web" data-project="interface">
+                    <div class="project-image project-image-generated">
+                        <div class="project-scan">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>Interface</span>
+                            <span>In progress</span>
+                        </div>
+
+                        <h2>Personal Interface System</h2>
+
+                        <p>
+                            The evolving visual language behind this portfolio:
+                            cinematic cards, field notes, signals, and system-inspired motion.
+                        </p>
+
+                        <button class="project-open" type="button">
+                            Open case note
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="project-modal" id="projectModal" aria-hidden="true">
+            <div class="project-modal-backdrop" data-project-close></div>
+
+            <article class="project-window" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+                <button class="project-close" type="button" data-project-close aria-label="Close project details">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <p class="project-window-label" id="projectModalLabel">Case Note</p>
+                <h2 id="projectModalTitle">Project Title</h2>
+                <p id="projectModalText">Project details appear here.</p>
+
+                <div class="project-window-grid" id="projectModalPoints"></div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Dhruv Solanki</p>
+
+        <div class="footer-icons">
+            <a href="https://linkedin.com/in/dhruv-solanki-3b83a5154" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:solankidhruvmarch@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://instagram.com/dhrruv28" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
